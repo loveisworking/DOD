@@ -1,66 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DriveOnDemand - Your Car Marketplace</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveOnDemand | Your Dream Car Awaits</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="index.js" defer></script>
 </head>
 <body>
-
-  <div class="hero">
-    <div class="hero-bg">
-      <img src="https://m.media-amazon.com/images/I/710UUOvF-mL._UF894,1000_QL80_.jpg" 
-           alt="Sleek sports car on a scenic road">
-      <div class="overlay"></div>
-    </div>
-
-    <header class="header">
-      <div class="logo">DriveOnDemand</div>
-      <nav class="nav">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
-      </nav>
-      <button class="btn btn-primary small">Sign In</button>
+    <header>
+        <div class="logo">
+            <h1><a href="index.html">DriveOnDemand</a></h1>
+        </div>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="listings.html">Cars</a>
+            <a href="login.html">Login / Register</a>
+            <a href="seller-dashboard.html">Become a Seller</a>
+            <a href="admin.html">Admin</a>
+        </nav>
     </header>
 
-    <div class="hero-content">
-      <h1 class="hero-title">Buy, Sell, and Rent.<br>All in One Place.</h1>
-      <p class="hero-subtitle">
-        Your ultimate platform for a seamless car experience. Discover thousands of verified listings, 
-        find your next rental, or sell your car with ease.
-      </p>
-      <div class="hero-buttons">
-        <button class="btn btn-primary">Find Your Dream Car</button>
-        <button class="btn btn-secondary">Sell My Car</button>
-      </div>
-    </div>
-  </div>
+    <main>
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-text">
+                <h2>Find Your Perfect Ride</h2>
+                <p>The best platform to buy, sell, or rent verified cars with confidence.</p>
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Search by make, model, or keyword...">
+                    <button id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+        </section>
 
-  <section class="features">
-    <div class="feature-card">
-      <h2>Buy a Car</h2>
-      <p>Browse a curated selection of new and pre-owned vehicles from certified dealers and private sellers.</p>
-      <button class="btn btn-primary small">Explore Listings</button>
-    </div>
-
-    <div class="feature-card">
-      <h2>Sell Your Car</h2>
-      <p>List your vehicle in minutes and connect with thousands of potential buyers on our secure platform.</p>
-      <button class="btn btn-primary small">Get Started</button>
-    </div>
-
-    <div class="feature-card">
-      <h2>Rent a Car</h2>
-      <p>Find the perfect ride for your next adventure. Choose from sedans, SUVs, and more for your trip.</p>
-      <button class="btn btn-primary small">Find Rentals</button>
-    </div>
-  </section>
-
+        <section class="featured-cars">
+            <h2>Featured Listings</h2>
+            <div class="car-grid" id="carGrid">
+                </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 DriveOnDemand. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
